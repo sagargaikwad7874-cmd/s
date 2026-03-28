@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sonali Photo Studio</title>
+
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+        background: #f0f8ff;
+    }
+
+    /* Navigation */
+    nav {
+        background: darkblue;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 15px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: yellow;
+    }
+
+    h1 {
+        text-align: center;
+        color: darkblue;
+        margin-top: 20px;
+        animation: fadeIn 2s;
+    }
+
+    .section {
+        background: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        animation: slideUp 1s;
+    }
+
+    img {
+        width: 220px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 10px;
+        transition: transform 0.5s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    .gallery {
+        text-align: center;
+    }
+
+    /* Form */
+    form input, form textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    form button {
+        padding: 10px 20px;
+        background: darkblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    form button:hover {
+        background: green;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+        from {transform: translateY(50px); opacity: 0;}
+        to {transform: translateY(0); opacity: 1;}
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        color: gray;
+    }
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Sonali Photo Studio</h1>
+
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About -->
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Sonali Photo Studio provides professional photography services for weddings, events and portfolios.</p>
+</div>
+
+<!-- Services -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Wedding Photography</li>
+        <li>Pre-Wedding Shoot</li>
+        <li>Birthday Photography</li>
+        <li>Passport Photos</li>
+    </ul>
+</div>
+
+<!-- Gallery -->
+<div class="section gallery" id="gallery">
+    <h2>Gallery</h2>
+    <img src="C:\Users\Admin\Desktop\photo4.jpeg">
+    <img src="C:\Users\Admin\Desktop\photo2.jpeg">
+    <img src="C:\Users\Admin\Desktop\photo1.jpeg">
+</div>
+
+<!-- Video Section -->
+<div class="section" id="video">
+    <h2>Our Work Video</h2>
+    <video width="320" height="240" controls>
+        <source src="C:\Users\Admin\Downloads\video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</div>
+
+<!-- Booking Form -->
+<div class="section" id="booking">
+    <h2>Book a Session</h2>
+    <form>
+        <input type="text" placeholder="Enter Your Name" required><br>
+        <input type="email" placeholder="Enter Email" required><br>
+        <input type="date" required><br>
+        <textarea placeholder="Enter Details"></textarea><br>
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<!-- Contact -->
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Phone:</b> 9021090859</p>
+    <p><b>Email:</b> sonalistudio@gmail.com</p>
+    <p><b>Address:</b>  Madha Road ,Vairag   </p>
+</div>
+
+<footer>
+    <p>© 2026 Sonali Photo Studio</p>
+</footer>
+
+</body>
+</html>
